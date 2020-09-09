@@ -3,10 +3,10 @@
 def majuscule(mot):
     resultat = ''
     for lettre in mot:
-        # TODO completer la fonction ici
+        lettre += 32
         
         resultat += lettre
-    return mot
+    return result
 
 
 if __name__ == '__main__':
