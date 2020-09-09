@@ -14,10 +14,10 @@ class TestExercice(unittest.TestCase):
     
     def test_upper_case_names(self):
         altered_words = [word.upper() for word in self.words]
-        output = list(map(exercice.majuscule, altered_words))
+        output = list(map(exercice.majuscule, self.words))
         self.assertListEqual(
             output,
-            self.words,
+            altered_words,
             'Toutes les lettres doivent être en majuscule.'
         )
 
